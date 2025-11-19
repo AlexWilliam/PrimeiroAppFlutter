@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605253573366",
+    "project_id": "primeiro-app-flutter-3e043",
+    "storage_bucket": "primeiro-app-flutter-3e043.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605253573366:android:28c5b1220738a626962ad7",
+        "android_client_info": {
+          "package_name": "br.com.alexwilliam.primeiroapp.primeiro_app_fluuter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmNuuUUoZ8wxsWHV1intjan5Uj1WFLznE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
