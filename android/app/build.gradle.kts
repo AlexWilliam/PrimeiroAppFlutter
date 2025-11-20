@@ -31,7 +31,10 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-        // multiDeskEnabled = true
+
+        multiDexEnabled = true
+        //buildConfigField("boolean", "ENABLE_MULTI_DESKTOP", "true")
+
     }
 
     buildTypes {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:primeiro_app_fluuter/screens/register_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
@@ -29,12 +30,20 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(height: 20),
                     TextField(
                       controller: _emailController,
+                      onChanged: (value) {
+                          _emailController.value = _emailController.value.copyWith(
+                          text: value.toLowerCase(),
+                          selection: TextSelection.collapsed(offset: value.length),
+                        );
+                      },
+                      keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                         hintText: 'E-mail',
                       )
                     ),
                     SizedBox(height: 20),
                     TextField(
+                      obscureText: true,
                       controller: _passwordController,
                       decoration: InputDecoration(
                         hintText: 'Senha',
@@ -43,16 +52,22 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(height: 20),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text('Login'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                        foregroundColor: Colors.white,
+                      ),
+                      child: Text('Entrar'),
                     ),
                     SizedBox(height: 20),
-                    ElevatedButton(
+                    /*ElevatedButton(
                       onPressed: () {},
                       child: Text('Entrar com Google'),
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 20),*/
                     TextButton(
-                      onPressed: () {}, 
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterScreen()));
+                      }, 
                       child: Text('Ainda não tem conta? Crie uma conta')),
                   ]
                 ),
