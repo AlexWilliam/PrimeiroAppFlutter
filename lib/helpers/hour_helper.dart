@@ -11,6 +11,6 @@ class HourHelper {
         int h = minutes ~/ 60;
         int m = minutes % 60;
 
-        return "${h.toString().padLeft(2, '0')}:{$m.toString().padLeft(2, '0'),}";
+        return "${h.toString().padLeft(2, '0')}:${m.toString().padLeft(2, '0')}";
     }
 } 

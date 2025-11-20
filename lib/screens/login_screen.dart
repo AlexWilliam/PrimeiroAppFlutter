@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:primeiro_app_fluuter/screens/home_screen.dart';
 import 'package:primeiro_app_fluuter/screens/register_screen.dart';
+import 'package:primeiro_app_fluuter/services/auth_service.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
 
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+
+  AuthService _authService = AuthService();
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +55,18 @@ class LoginScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 20),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        _authService.enterUser(
+                            email: _emailController.text,
+                            pass: _passwordController.text
+                        ).then((String? error) {
+                          if(error != null) {
+                            final success = error.contains('sucesso');
+                            final snackBar = SnackBar(content: Text(error), backgroundColor: (!success) ? Colors.red : Colors.green);
+                            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                          }
+                        });
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                         foregroundColor: Colors.white,
