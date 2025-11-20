@@ -31,7 +31,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-        multiDeskEnabled = true
+        // multiDeskEnabled = true
     }
 
     buildTypes {
