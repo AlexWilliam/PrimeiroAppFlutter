@@ -12,7 +12,20 @@
           "package_name": "br.com.alexwilliam.primeiroapp.primeiro_app_fluuter"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "605253573366-e9see4vdekb9hru5n3t9ab5ltgdg9lm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.alexwilliam.primeiroapp.primeiro_app_fluuter",
+            "certificate_hash": "b50a5841ae428dba036d64783febf2ac047b4424"
+          }
+        },
+        {
+          "client_id": "605253573366-r0pgq2aa1j2ke70ojaolm18obq2csljt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCmNuuUUoZ8wxsWHV1intjan5Uj1WFLznE"
@@ -20,7 +33,55 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605253573366-r0pgq2aa1j2ke70ojaolm18obq2csljt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "605253573366-v6h43u6vao8gopuqa27eact0esb425vb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.alexwilliam.primeiroapp.primeiroAppFluuter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605253573366:android:14afa492e6fa8f84962ad7",
+        "android_client_info": {
+          "package_name": "br.com.orbesystem.appflutter.appflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605253573366-r0pgq2aa1j2ke70ojaolm18obq2csljt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmNuuUUoZ8wxsWHV1intjan5Uj1WFLznE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605253573366-r0pgq2aa1j2ke70ojaolm18obq2csljt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "605253573366-v6h43u6vao8gopuqa27eact0esb425vb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.alexwilliam.primeiroapp.primeiroAppFluuter"
+              }
+            }
+          ]
         }
       }
     }

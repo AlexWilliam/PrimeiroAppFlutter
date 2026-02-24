@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -60,10 +57,22 @@ class DefaultFirebaseOptions {
     messagingSenderId: '605253573366',
     projectId: 'primeiro-app-flutter-3e043',
     storageBucket: 'primeiro-app-flutter-3e043.firebasestorage.app',
+    androidClientId: '605253573366-e9see4vdekb9hru5n3t9ab5ltgdg9lm5.apps.googleusercontent.com',
+    iosClientId: '605253573366-v6h43u6vao8gopuqa27eact0esb425vb.apps.googleusercontent.com',
     iosBundleId: 'br.com.alexwilliam.primeiroapp.primeiroAppFluuter',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCfxkGMRhjE5lGdecinvHO3nn3iQXsShxE',
+    appId: '1:605253573366:web:1cb5973e87d7e3ea962ad7',
+    messagingSenderId: '605253573366',
+    projectId: 'primeiro-app-flutter-3e043',
+    authDomain: 'primeiro-app-flutter-3e043.firebaseapp.com',
+    storageBucket: 'primeiro-app-flutter-3e043.firebasestorage.app',
+    measurementId: 'G-S9CSL4GNKK',
+  );
+
+  static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyCfxkGMRhjE5lGdecinvHO3nn3iQXsShxE',
     appId: '1:605253573366:web:1cb5973e87d7e3ea962ad7',
     messagingSenderId: '605253573366',
